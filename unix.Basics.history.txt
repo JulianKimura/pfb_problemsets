@@ -1,0 +1,209 @@
+    1  ls
+    2  cd pfb_2019/
+    3  ls
+    4  cd pfb_problemsets/
+    5  ls
+    6  vi git_exercises.txt
+    7  ls
+    8  git add git_exercises.txt 
+    9  git commit -m "added a line of text"
+   10  git push origin master
+   11  git status
+   13  ls
+   14  mkdir files
+   15  ls
+   16  cd unix_01/
+   17  ls
+   18  cd ..
+   19  ls
+   20  pwd
+   21  cd unix_01/
+   22  ls
+   23  mv cancer_genes.fasta /Network/Servers/miniserve2.cshl.edu/Users/admin/Desktop/untitled folder/jki/pfb_2019/pfb_problemsets/cancer_genes.fasta
+   24  mv cancer_genes.fasta /Network/Servers/miniserve2.cshl.edu/Users/admin/Desktop/untitled folder/jki/pfb_2019/pfb_problemsets/
+   25  ls
+   26  man mv
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd files/
+   31  ls
+   32  cd ..
+   33  ls
+   34  cd uix_o1
+   35  cd unix_01/
+   36  ls
+   37  mv cancer_genes.fasta /Network/Servers/miniserve2.cshl.edu/Users/admin/Desktop/untitled folder/jki/pfb_2019/pfb_problemsets/cancer_genes.fasta
+   38  ls
+   39  cd ..
+   40  cd files
+   41  ls
+   42  pwd -p
+   43  pwd -P
+   44  cd ..
+   45  cd unix_01/
+   46  ls
+   47  mv cancer_genes.fasta ~/pfb_2019/pfb_problemsets/files/
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd files
+   52  ls
+   53  git add files/cancer_genes.fasta
+   54  ls
+   55  cd ..
+   56  ls
+   57  cd files
+   58  ls
+   59  cd ..
+   60  git add files/cancer_genes.fasta
+   61  git commit -m 'adding cancer_genes.fasta'
+   62  git push
+   63  ls
+   64  vi mysequences.txt
+   65  ls
+   66  git status
+   67  ls
+   68  ls -a
+   69  rm .git_exercises.txt.swp 
+   70  ls
+   71  vi mysequences.txt 
+   72  ls
+   73  vi mysequences.txt 
+   74  rm mysequences.txt 
+   75  ls
+   76  vi mysequences.txt
+   77  ls
+   78  git add mysequences.txt 
+   79  git commit -m "commit mysequences.txt"
+   80  git push
+   81  ls
+   82  cd files
+   83  ls
+   84  cd ..
+   85  ls
+   86  mkdir fastas
+   87  ls
+   88  cd files
+   89  ls
+   90  cp cancer_genes.fasta ~/pfb_2019/pfb_problemsets/fastas
+   91  ls
+   92  cd ..
+   93  ls
+   94  cd fastas/
+   95  ls
+   96  cd files
+   97  cd ../files
+   98  ls
+   99  pwd
+  100  rm cancer_genes.fasta 
+  101  ls
+  102  cd ..
+  103  ls
+  104  cd fasta
+  105  cd fastas/
+  106  ls
+  107  less cancer_genes.fasta 
+  108  cd ..
+  109  ls
+  110  git push
+  111  ls
+  112  git add
+  113  git add files/
+  114  git commit -m "commiting files"
+  115  git push
+  116  ls
+  117  git add fastas/
+  118  git commit -m "committing fastas folder"
+  119  git push
+  120  ls
+  121  git add files
+  122  git commit -m "commiting updated files folder"
+  123  git push
+  124  ls
+  125  ls unix_01/
+  126  cd ..
+  127  ls
+  128  ls 
+  129  ls pfb_problemsets/
+  130  ls
+  131  cd pfb_problemsets/
+  132  ls
+  133  git status
+  134  ls
+  135  git add unix_01/
+  136  git commit -m "deleted cancer_genes.fasta"
+  137  git push
+  138  ls
+  139  git add files/
+  140  git commit -m "adding files"
+  141  ls
+  142  cd files
+  143  ls
+  144  cd ..
+  145  ls
+  146  vi oops
+  147  ls
+  148  git add oops
+  149  got commit -m "oops"
+  150  git commit -m "oops"
+  151  git push
+  152  ls
+  153  git rm oops
+  154  git commit -m "removing oops"
+  155  git push
+  156  ls
+  157  vi oops2
+  158  ls
+  159  git add oops2
+  160  git commit -m "commiting oops2"
+  161  git push
+  162  ls
+  163  rm oops2
+  164  ls
+  165  git add oops2
+  166  git commit -m "removing oops2"
+  167  git push
+  168  vi never
+  169  ls
+  170  git add never
+  171  git reset never
+  172  ls
+  173  git status
+  174  ls
+  175  rm never
+  176  ls
+  177  git status
+  178  ls
+  179  cd ..
+  180  ls
+  181  ls
+  182  mkdir pfb_coursematerials
+  183  ls
+  184  cd pfb_coursematerials/
+  185  git clone https://github.com/prog4biol/pfb2019.git
+  186  ls
+  187  cd pfb2019
+  188  ls
+  189  ls
+  190  cd ..
+  191  cd ..
+  192  ls
+  193  rm pfb_coursematerials/
+  194  rm -r pfb_coursematerials/
+  195  ls
+  196  cd pfb_coursematerials/
+  197  ls
+  198  cd pfb2019
+  199  ls
+  200  cd ..
+  201  cd ..
+  202  ls
+  203  cd pfb_problemsets
+  204  ls
+  205  git status
+  206  ls
+  207  man rm
+  208  history
+  209  ls
+  210  history > unix.Basics.history.txt
