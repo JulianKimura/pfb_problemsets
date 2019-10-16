@@ -19,9 +19,13 @@ if number > 0:
 		if number%2 == 0:
 			message3 = "is an even number that is smaller than 50"
 			print(number, message3)
+# otherwise, this means that the number is an odd number smaller than 50
 		else:
 			message4 = "is an odd number that is smaller than 50"
 			print(number, message4)
+	elif number == 50:
+		message6 = "is 50"
+		print(number, message6)
 #if positive but not less than 50, will see if it is divisible by 3
 	elif number%3 == 0: 
 		message5 = "is larger than 50 and divisible by 3"
