@@ -16,6 +16,11 @@ complement = complement.upper()
 #this is taking the reverse sequence of the generated sequence above
 reverse_complement = complement[::-1]
 
-print(reverse_complement)
+string = '''Original Sequence 5' ATGCAGGGGAAACATGATTCAGGAC 3'
+Complement 3' {} 5'
+Reverse Complement 5' {} 3'
+'''
+final_string = string.format(complement, reverse_complement)
+print(final_string)
 
  
