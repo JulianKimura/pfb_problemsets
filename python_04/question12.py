@@ -2,6 +2,6 @@
 
 my_list = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
 
-lengths = [(len(x),x) for x in my_list]
+lengths = [(my_list.index(x),len(x),x) for x in my_list]
 
 print(lengths)
