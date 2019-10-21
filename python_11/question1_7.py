@@ -22,12 +22,14 @@ class dna_seq(object):
 		string = "There are {}A's, {}T's, {}G's, {}C's"
 		final_string = string.format(As, Ts, Gs, Cs)
 		return final_string
+#below we have a method for finding the gc content of the sequence
 	def GC_content(self):
 		Gs = int(self.sequence.count('G'))
 		Cs = int(self.sequence.count('C'))
 		total_length = len(self.sequence)
 		GC = (Gs+Cs)/total_length
 		return GC
+#below we have a method for returning the inputted sequence in a fasta format
 	def fasta_format(self):
 		fasta_dict = {}
 		header = '>'+self.gene_name
