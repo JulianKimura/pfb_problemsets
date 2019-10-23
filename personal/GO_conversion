@@ -2,20 +2,29 @@
 import re
 import sys
 
-
-new_line = ''
-gene_list = []
-
+#for every file written on the command line next to the name of the script
 for files in sys.argv[1:]:
+#open the files, and create an output file that has the word GO at the begining of it
 	with open(files, 'r') as input_file, open('GO'+files+'.txt', 'w') as output_file:
+#for each of the lines in the input files that are opened
 		for line in input_file:
+#eliminate all line break characters
 			line = line.rstrip()
+#replace the pipe symbol for a capital X
 			line = line.replace("|","X")
+#substitute all characters before and including the capital X with nothing
 			line = re.sub(r".+X","",line)
+#substitute all characters after the "-" with nothing
 			line = re.sub(r"-.+","",line)
+#capitalize all characters in the line
 			line = line.upper()
+#append the string "_HUMAN" at the end of each line
 			line = line+'_HUMAN'
+#write each of the lines into the output files with a line break character at the end.
+#this ensures that each gene name will be in the same row
 			output_file.write(line+'\n')
+#for each file that is processed, print out test telling the user what file the converted contents
+#were written to
 	string = 'Successfully converted {} to GO{}.txt'
 	final_string = string.format(files,files)
 	print(final_string)
