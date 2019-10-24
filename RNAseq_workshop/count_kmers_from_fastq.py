@@ -58,7 +58,7 @@ def main():
 
 #the method from the first script that takes out a list of sequences from a fastqfile
 	seq_list = seq_list_from_fastq_file(fastq_filename)
-	all_kmers = []    
+	all_kmers = [] 
 #for each one of the sequences we need to pull out the kmers
 #the code below will produce a list of kmers from each of the sequences in the list of sequences derived from the fastqfile	
 	for seq in seq_list:
@@ -66,7 +66,6 @@ def main():
 #all_kmers list will now take kmers, which is actually a list of kmers, all_kmers will simply be a list of kmers rather than a list of lists.
 #remember that extend will add all members of a list into the end of a list to extend it!
 		all_kmers.extend(kmers)
-
 #count_kmers is a function made which counts the list of all_kmers
 	kmer_count_dict = count_kmers(all_kmers)
 	unique_kmers = list(kmer_count_dict.keys())
