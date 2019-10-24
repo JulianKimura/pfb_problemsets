@@ -21,13 +21,11 @@ import os, sys
 ##  seuqence : nucleotide sequence (type: string)
 ##
 ##  returns kmer_list : list of kmer sequences.
-##                    ie.  ["GATC", "ATCG", ...]
+#                    ie.  ["GATC", "ATCG", ...]
     
 def sequence_to_kmer_list(sequence, kmer_length):
 
 	kmers_list = list()
-	sequence = sys.argv[1]
-	kmer_length = sys.argv[2]
     ## begin your code
 #this will set up the counter equal to the actual index in the string
 	nt_index = -1
