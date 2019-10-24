@@ -33,7 +33,7 @@ def sequence_to_kmer_list(sequence, kmer_length):
 	for nt in sequence:
 #the counter will start its count from 0
 		nt_index += 1
-		if len(sequence[nt_index : nt_index + int(sys.argv[2])]) == 6:
+		if len(sequence[nt_index : nt_index + int(sys.argv[2])]) == int(sys.argv[2]):
 #the command below will append a string that is in the interval specified in the second field of input
 			kmers_list.append(sequence[nt_index:nt_index+int(sys.argv[2])])
 	return kmers_list
